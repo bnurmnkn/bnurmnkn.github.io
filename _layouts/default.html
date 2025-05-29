@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <link rel="icon" href="{{ '/assets/my_pic.ico' | relative_url }}" type="image/x-icon" />
- </head>
+
+    <link rel="icon" href="{{ '/assets/my_pic.ico' | relative_url }}" type="image/x-icon" />
+    
+    {%- seo -%}
+    {%- feed_meta -%}
+    {{ head }}
+
+  </head>
+  <body>
+    {{ content }}
+  </body>
+</html>
